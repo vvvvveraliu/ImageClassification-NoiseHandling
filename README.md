@@ -1,6 +1,6 @@
 # Predictive_Modeling_Image_Classification
 
-## Predictive Modeling for Handling label Noises
+## Predictive Modeling for Handling Label Noises
 
 ### Project Goal 
 This project mainly focuses on carrying out model evaluation and selection for predictive analytics on an imbalanced image data. We deal with a classification problem, where the training labels are not perfect, which is a common phenomenon in data science. Getting accurate ground true labels can be costly and time-consuming, and even impossible sometimes. So in this project, we address the issue with imperfect labels. In particular, we are going to train a predictive model where label noises exist.
@@ -10,6 +10,11 @@ We worked on a noisy version of "CIFAR-10" dataset. The original CIFAR-10 datase
 * noisy labels for all images 
 * clean labels for the first 10,000 images 
 
+### Challenge
+Our goal is to build a predictive model for image classification using the imperfect dataset provided. Considering practical effectiveness, we concern a lot about the balance between the complexity of variable/features/models used and the predictive performance.
 
-
+To perform the classification, a baseline logistic regression model that uses RGB color histogram features and treats the training set as if it has clean labels is a common practice. However, 
+the overall performance of this baseline model is not satisfactory mainly due to two reasons: 
+1. the model and feature extractor used is not sophisticated enough. The toyish model we used for baseline is barely for the purpose of illustrating the workflow of building a predictive models for CIFAR-10 dataset. Therefore, we should consider a more complex model that will give a better prediction performance
+2. we treat the noisy labels with error as if they are clean. Therefore, the model is actually learning from a untrustful source. We can address the second issue with a "label-correction" approach - before feeding the training set to the predictive model, they use the small set with both clean and noisy label to train a label-correction model.
 
