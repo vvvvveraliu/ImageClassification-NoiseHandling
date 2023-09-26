@@ -1,6 +1,6 @@
 # Predictive_Modeling_Image_Classification
 
-## Predictive Modeling for Handling Label Noises
+## Predictive Modeling for Handling Imperfect Labels
 
 ### Project Goal 
 This project mainly focuses on carrying out model evaluation and selection for predictive analytics on an imbalanced image data. We deal with a classification problem, where the training labels are not perfect, which is a common phenomenon in data science. Getting accurate ground true labels can be costly and time-consuming, and even impossible sometimes. So in this project, we address the issue with imperfect labels. In particular, we are going to train a predictive model where label noises exist.
@@ -21,5 +21,11 @@ the overall performance of this baseline model is not satisfactory mainly due to
 ### Implementation 
 To improve the model performance, we will implement the following two models: 
 * Model I: this is a more sophisticated model (e.g. neural networks) than the baseline, while still treats the noisy labels as clean ones;
-* Model II: use exactly the same predictive model as in Model I, but add some extra models or procedures to address the label noise issue. 
+* Model II: use exactly the same predictive model as in Model I, but add some extra models or procedures to address the label noise issue.
+
+### Results
+
+* Baseline: Logistic Regression model gives low accuracy of around 24%
+* Model I:  CNN(convolutional neural network), which gives better accuracy of about 47.6%
+* Model II: Applied a VGG network to clean the noisy labels and then applys same method of Model I. It has a better perfomance of reaching accuracy around 58.3%
 
