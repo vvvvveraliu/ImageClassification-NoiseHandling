@@ -18,3 +18,8 @@ the overall performance of this baseline model is not satisfactory mainly due to
 1. the model and feature extractor used is not sophisticated enough. The toyish model we used for baseline is barely for the purpose of illustrating the workflow of building a predictive models for CIFAR-10 dataset. Therefore, we should consider a more complex model that will give a better prediction performance
 2. we treat the noisy labels with error as if they are clean. Therefore, the model is actually learning from a untrustful source. We can address the second issue with a "label-correction" approach - before feeding the training set to the predictive model, they use the small set with both clean and noisy label to train a label-correction model.
 
+### Implementation 
+To improve the model performance, we will implement the following two models: 
+* Model I: this is a more sophisticated model (e.g. neural networks) than the baseline, while still treats the noisy labels as clean ones;
+* Model II: use exactly the same predictive model as in Model I, but add some extra models or procedures to address the label noise issue. 
+
