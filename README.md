@@ -19,12 +19,12 @@ the overall performance of this baseline model is not satisfactory mainly due to
 
 ### Implementation 
 To improve the model performance, we will implement the following two models: 
-* Model I: this is a more sophisticated model (e.g. neural networks) than the baseline, while still treats the noisy labels as clean ones;
-* Model II: use exactly the same predictive model as in Model I, but add some extra models or procedures to address the label noise issue.
+* Model I: We need a more sophisticated model (e.g. neural networks) than the baseline, while still treats the noisy labels as clean ones;
+* Model II: We can use exactly the same predictive model as in Model I, but add some extra models or procedures to address the label noise issue.
 
 ### Results
 
 * Baseline: Logistic Regression model gives low accuracy of around 24%
 * Model I:  CNN(convolutional neural network), which gives better accuracy of about 47.6%
-* Model II: Applied a VGG network to clean the noisy labels and then applys same method of Model I. It has a better perfomance of reaching accuracy around 58.3%
+* Model II: Applied a VGG network to clean the noisy labels and then applys same method of Model I. It boosts the perfomance of reaching accuracy to around 58.3%
 
