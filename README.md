@@ -1,5 +1,5 @@
 
-## Predictive Modeling for Handling Imperfect Labels in Image Classification
+# Predictive Modeling for Handling Imperfect Labels in Image Classification
 
 ### Project Goal 
 This project mainly focuses on carrying out model evaluation and selection for predictive analytics on an imbalanced image data. We deal with a classification problem, where the training labels are not perfect, which is a common phenomenon in data science. Getting accurate ground true labels can be costly and time-consuming, and even impossible sometimes. So in this project, we address the issue with imperfect labels. In particular, we are going to train a predictive model where label noises exist.
