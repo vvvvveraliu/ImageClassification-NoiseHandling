@@ -24,7 +24,8 @@ To improve the model performance, we will implement the following two models:
 
 ### Results
 
-* Baseline: Logistic Regression model gives low accuracy of around 24%
-* Model I:  CNN(convolutional neural network), which gives better accuracy of about 47.6%
-* Model II: Applied a VGG network to clean the noisy labels and then applys same method of Model I. It boosts the perfomance of reaching accuracy to around 58.3%
+* Baseline: Logistic Regression model gives a low accuracy of around 24%
+* Model I:  We explored different models including Decision Trees, Random Forest, KNN, Naive Bayes, and CNN, and we selected CNN as it gives the best accuracy of about 47.6%
+* Model II: We applied a VGG network to clean the noisy labels and then applys same method of Model I. It boosts the perfomance of reaching accuracy to around 58.3%
 
+(For more details, please refer to Predictive_modeling.pdf) 
