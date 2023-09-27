@@ -22,7 +22,7 @@ To improve the model performance, we will implement the following two models:
 * Model I: We need a more sophisticated model (e.g. neural networks) than the baseline, while still treats the noisy labels as clean ones;
 * Model II: We can use exactly the same predictive model as in Model I, but add some extra models or procedures to address the label noise issue.
 
-You can find more details about the implementation (here)[https://github.com/vvvvveraliu/ImageClassification-NoiseHandling/blob/main/main.ipynb] 
+You can find more details about the implementation [here](https://github.com/vvvvveraliu/ImageClassification-NoiseHandling/blob/main/main.ipynb)
 
 ### Results
 
@@ -30,4 +30,4 @@ You can find more details about the implementation (here)[https://github.com/vvv
 * Model I:  We explored different models including Decision Trees, Random Forest, KNN, Naive Bayes, and CNN, and we selected CNN as it gives the best accuracy of about 47.6%
 * Model II: We applied a VGG network to clean the noisy labels and then applys same method of Model I. It boosts the perfomance of reaching accuracy to around 58.3%
 
-You can find more details about the result (here)[https://github.com/vvvvveraliu/Predictive-Modeling-Image-Classification/blob/main/Predictive_modeling.pdf] 
+You can find more details about the result [here](https://github.com/vvvvveraliu/Predictive-Modeling-Image-Classification/blob/main/Predictive_modeling.pdf)
